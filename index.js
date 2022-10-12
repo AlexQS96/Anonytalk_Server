@@ -11,7 +11,7 @@ app.use(cors());
 
 const io = new Server(server, {
   cors: {
-    origin: ["https://anonitalk.netlify.app","http://192.168.1.40:3000"],
+    origin: ["https://anonytalk.netlify.app","http://192.168.1.40:3000"],
     optionsSuccessStatus: 200,
     methods: ["GET", "POST"],
   },
