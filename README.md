@@ -1,6 +1,6 @@
 # Anonytalk Chat
 
-<a href="https://anonytalk.netlify.app" ><img width=400 src="./public/img/preview.png"></a>
+<a href="https://anonytalk.netlify.app" ><img width=400 src="https://raw.githubusercontent.com/AlexQS96/Anonytalk_Web/main/public/img/preview.png"></a>
 
 ### Anonytalk es una pagina de Chat anonimo grupal, ingresa tu nombre y la id del grupo de tu chat y empeza a chatear!.
 
