@@ -19,7 +19,7 @@ const io = new Server(server, {
 
 //This function returns the amount of users in a specific room
 function getSizeRoom(room){
-  const clientsInRoom = 0;
+  let clientsInRoom = 0;
   return io.sockets.adapter.rooms.has(room)? clientsInRoom = io.sockets.adapter.rooms.get(room).size : clientsInRoom
 }
 
@@ -29,7 +29,7 @@ io.on("connection", (socket) => {
   socket.on("join_room", (data) => {
 
     //takes the username and room id from the login page and joins the user to the room
-    const [username, roomid] = data;
+    let [username, roomid] = data;
     socket.join(roomid);
 
     //When a new user logs in the chat bot emit a message to the room about the new user
@@ -53,7 +53,7 @@ io.on("connection", (socket) => {
   socket.on('leave_room', (data) => {
 
     //When the user leaves the room the chat bot emit a message about that user
-    const {username, room} = data;
+    let {username, room} = data;
     socket.leave(room);
 
     socket.to(room).emit('receive_message', {
