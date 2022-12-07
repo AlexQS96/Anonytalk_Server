@@ -11,7 +11,7 @@ app.use(cors());
 
 const io = new Server(server, {
   cors: {
-    origin: "https://anonytalk.netlify.app",
+    origin: "https://anonytalk.vercel.app",
     optionsSuccessStatus: 200,
     methods: ["GET", "POST"],
   },
